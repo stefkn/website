@@ -59,9 +59,9 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Absurd</Brand>
+          <Brand>steken.dev</Brand>
           <Mobile>
-            <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
+            <button onClick={this.toggleMobileMenu} style={{ color: 'white' }}>
               <MenuIcon />
             </button>
           </Mobile>

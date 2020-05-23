@@ -1,7 +1,11 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    // primary: `'Prata', serif`,
+    // primary: `'Roboto'`,
+    // secondary: `'Average', serif`,
+    primary: `'IBM Plex Mono'`,
+    secondary: `'Roboto'`,
+    herotext: `'Roboto'`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',
@@ -20,7 +24,7 @@ const theme = {
       light: '#564F62',
       regular: '#211E26',
     },
-    primary: '#8bd8ed',
+    primary: '#0014ff',
   },
   screen: {
     xs: '575px',

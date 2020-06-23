@@ -6,16 +6,57 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
+const headerstyle = {
+  'fontFamily': 'Rubik Light',
+  'fontSize': '5em',
+  'color': 'white',
+  'fontWeight': 'bold',
+  'zIndex': '5'
+}
+const headersecondarystyle = {
+  'fontFamily': 'IBM Plex Mono',
+  'fontWeight': '500',
+  'fontSize': '1em',
+  'color': 'white', 
+  'lineHeight': '24px',
+  'zIndex': '5',
+  'position': 'relative'
+}
+const commentstyle = {
+  'fontFamily': 'Roboto',
+  'fontSize': '10px',
+  'color': 'white',
+  'display': 'contents'
+}
+const neumorph = {
+  'height': '45px',
+  'width': '160px',
+  'borderRadius': '6px',
+  'background': 'rgb(231, 61, 149)',
+  'box-shadow': 'rgb(23, 33, 148) 22px 19px 32px',
+  'marginTop': '1em',
+  'position': 'absolute',
+  'zIndex': '5'
+}
+const neumorphtext = {
+  'color': 'white',
+  'fontFamily': 'IBM Plex Mono',
+  'fontWeight': '500',
+  'paddingLeft': '10px',
+  'paddingTop': '5px',
+  'fontSize': '21px'
+}
+
 const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
+        art_headerbg: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "headerbg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 673) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -27,22 +68,19 @@ const Header = () => (
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <Img fluid={data.art_headerbg.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h1>
-                Fast in
-                <br />
-                every way
-                <br />
-                that matters
+              <h1 style={headerstyle} >
+                Hello.
               </h1>
               <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
+              <p class="subtext" style={headersecondarystyle}>
+                Stefan Kenichiro Nowak is <br /> a full-stack software engineer <br /> in 🇬🇧London, UK.
               </p>
+              {/* <div style={neumorph}>
+                <p style={neumorphtext}>Click me!</p>
+              </div> */}
             </Text>
           </Grid>
         </Container>
@@ -58,11 +96,39 @@ const HeaderWrapper = styled.header`
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
   }
+
+  @keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); opacity: 0%; }
+    100% { transform: translate3d(0, 0, 0); opacity: 100%; }
+  }
+
+  @keyframes showSubText {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+  }
+
+  h1 {
+    opacity: 0%;
+    animation: showTopText 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+
+  .subtext {
+    opacity: 0%;
+    animation: showSubText 4s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
 `;
 
 const Art = styled.figure`
-  width: 100%;
+  width: 130%;
   margin: 0;
+  top: 16px;
+  z-index: 0;
 
   > div {
     width: 120%;
@@ -70,6 +136,7 @@ const Art = styled.figure`
 
     @media (max-width: ${props => props.theme.screen.md}) {
       width: 100%;
+      top: -101px;
     }
   }
 `;

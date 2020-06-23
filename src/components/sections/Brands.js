@@ -6,38 +6,14 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
+import { ReactComponent as AnsibleLogo } from '@images/stack/ansible.svg';
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
+    logo: AnsibleLogo,
     link: 'https://airbnb.io',
   },
-  {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
-  },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
-  },
+
 ];
 
 const UsedBy = () => (

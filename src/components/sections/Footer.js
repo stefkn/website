@@ -13,25 +13,25 @@ import TwitterIcon from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
-  },
+    link: 'https://github.com/stefkn',
+  }
+  // {
+  //   icon: InstagramIcon,
+  //   link: 'https://instagram.com/ajay_ns',
+  // },
+  // {
+  //   icon: TwitterIcon,
+  //   link: 'https://twitter.com/ajayns08',
+  // },
 ];
 
 const Footer = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_pot: file(
+        art_deer: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
+          name: { eq: "deer" }
         ) {
           childImageSharp {
             fluid(maxWidth: 960) {
@@ -45,20 +45,18 @@ const Footer = () => (
       <React.Fragment>
         <Art>
           <Img
-            fluid={data.art_pot.childImageSharp.fluid}
+            fluid={data.art_deer.childImageSharp.fluid}
             style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
           />
         </Art>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>ste.ken.now</h2>
               <span>
                 Illustrations by
                 {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
+                stefan
               </span>
             </Copyright>
             <SocialIcons>
@@ -92,12 +90,13 @@ const SocialIcons = styled.div`
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.primary};
   padding: 32px 0;
+  color: white;
 `;
 
 const Copyright = styled.div`
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.regular};
+  color: white;
 
   a {
     text-decoration: none;

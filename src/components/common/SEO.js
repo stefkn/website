@@ -2,13 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  description: 'Stefan Kenichiro Nowak - Software Engineer',
+  title: 'steken.dev',
+  url: 'steken.dev',
+  author: 'stefkn',
+  keywords: ['gatsby', 'site', 'personal', 'code', 'software', 'website'],
   img: '',
-  twitterId: '@ajayns_',
+  twitterId: '@1ICHIR0',
   facebookId: '',
 };
 

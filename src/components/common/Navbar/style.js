@@ -63,7 +63,7 @@ export const MobileMenu = styled.div`
 `;
 
 export const Brand = styled.div`
-  font-family: 'Roboto';
+  font-family: ${props => props.theme.font.primary};
   color: white;
   ${props => props.theme.font_size.large};
 `;

@@ -4,8 +4,8 @@ const theme = {
     // primary: `'Roboto'`,
     // secondary: `'Average', serif`,
     primary: `'IBM Plex Mono'`,
-    secondary: `'Roboto'`,
-    herotext: `'Roboto'`,
+    secondary: `'Rubik'`,
+    herotext: `'Rubik'`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',

@@ -7,17 +7,17 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const headerstyle = {
-  'fontFamily': 'Rubik Light',
+  'fontFamily': 'Rubik',
   'fontSize': '5em',
   'color': 'white',
-  'fontWeight': 'bold',
+  'fontWeight': '400',
   'zIndex': '5'
 }
 const headersecondarystyle = {
   'fontFamily': 'IBM Plex Mono',
-  'fontWeight': '500',
+  'fontWeight': '300',
   'fontSize': '1em',
-  'color': 'white', 
+  'color': 'white',
   'lineHeight': '24px',
   'zIndex': '5',
   'position': 'relative'
@@ -75,7 +75,7 @@ const Header = () => (
                 Hello.
               </h1>
               <br />
-              <p class="subtext" style={headersecondarystyle}>
+              <p className="subtext" style={headersecondarystyle}>
                 Stefan Kenichiro Nowak is <br /> a full-stack software engineer <br /> in 🇬🇧London, UK.
               </p>
               {/* <div style={neumorph}>

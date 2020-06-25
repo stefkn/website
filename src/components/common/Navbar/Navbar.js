@@ -15,7 +15,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = [];
+const NAV_ITEMS = ['About Me', 'Articles'];
 // const NAV_ITEMS = ['About', 'Brands', 'Team', 'FAQ'];
 
 class Navbar extends Component {
@@ -34,9 +34,9 @@ class Navbar extends Component {
   };
 
   getNavAnchorLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+    <a href={`/${item.toLowerCase().replace(/\s/g, '')}`} onClick={this.closeMobileMenu}>
       {item}
-    </AnchorLink>
+    </a>
   );
 
   getNavList = ({ mobile = false }) => (

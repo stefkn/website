@@ -31,10 +31,11 @@ const Articles = ({
 }
 
 const MainMatter = styled.div`
-  margin-top: 26vh;
-  margin-bottom: 12vh;
-  padding-left: 17vw;
-  padding-right: 17vw;
+  padding-top: 22vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 
   h2 {
     margin-bottom: 16px;

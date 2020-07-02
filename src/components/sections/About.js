@@ -50,8 +50,8 @@
 //             <div>
 //               <h2>Code is The Easiest Part</h2>
 //               <p>
-//                 Engineers can get distracted by how clever their solution is. 
-//                 That might be great for winning code golf competitions, but truly 
+//                 Engineers can get distracted by how clever their solution is.
+//                 That might be great for winning code golf competitions, but truly
 //                 valuable code can be understood and extended by anyone.
 //               </p>
 //             </div>
@@ -208,8 +208,10 @@ My key language competencies are currently Python, JavaScript and Java. I'm curr
 );
 
 const Frontmatter = styled.div`
-  padding-left: 17vw;
-  padding-right: 17vw;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 
   h2 {
     margin-bottom: 16px;

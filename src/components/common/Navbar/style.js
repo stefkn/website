@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   background-color: #0014ff;
   position: fixed;
   width: 100%;
+  height: 8vh;
   top: 0;
   z-index: 1000;
 `;
@@ -59,7 +60,14 @@ export const NavItem = styled.li`
 
 export const MobileMenu = styled.div`
   width: 100%;
-  background: ${props => props.theme.color.primary};
+
+  width: 100%;
+  height: 18vh;
+  /* background: #0014ff; */
+  /* background-color: white; */
+  background: -moz-linear-gradient(top, rgba(0,20,255,1) 0%, rgba(229,229,229,0.02) 98%, rgba(229,229,229,0) 100%);
+  /* background: -webkit-linear-gradient(top, rgba(0,20,255,1) 0%,rgba(229,229,229,0.02) 98%,rgba(229,229,229,0) 100%); */
+  background: linear-gradient(to bottom, rgba(0,20,255,1) 0%,rgb(254, 47, 132) 98%,rgb(254, 47, 132) 100%);
 `;
 
 export const Brand = styled.div`

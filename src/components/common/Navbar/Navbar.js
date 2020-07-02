@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
-
+import { Link } from 'gatsby';
 import { Container } from '@components/global';
 import {
   Nav,
@@ -60,7 +60,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>steken.dev</Brand>
+          <Brand><Link to="/" style={{'color': 'white', 'textDecoration': 'none'}}>steken.dev</Link></Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'white' }}>
               <MenuIcon />

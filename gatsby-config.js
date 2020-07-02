@@ -68,6 +68,19 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              theme: 'synthwave'
+            }
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-catch-links`,
   ],
 };

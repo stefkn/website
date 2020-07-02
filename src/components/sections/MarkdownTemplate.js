@@ -8,11 +8,14 @@ import Footer from '@sections/Footer';
 
 import styled from 'styled-components';
 
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  deckDeckGoHighlightElement();
   return (
     <Layout>
         <Navbar />
@@ -35,8 +38,36 @@ const Article = styled.div`
   padding-left: 17vw;
   padding-right: 17vw;
 
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    padding-bottom: 1em;
+    font-family: Rubik;
+  }
+
   h2 {
     margin-bottom: 16px;
+    font-family: Rubik;
+  }
+
+  ul, ol, table {
+    font-size: 24px;
+    color: #564F62;
+  }
+
+  table {
+    margin-block-end: 24px;
+    margin-block-start: 24px;
+  }
+
+  --deckgo-highlight-code-font-family: IBM Plex Mono;
+  --deckgo-highlight-code-token-function: #ff146f;
+  --deckgo-highlight-code-token-comment: #0914ff;
+  --deckgo-highlight-code-carbon-background: #00075f;
+  --deckgo-highlight-code-carbon-box-shadow: none;
+
+  code {
+    element::-webkit-scrollbar { width: 0 !important }
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {

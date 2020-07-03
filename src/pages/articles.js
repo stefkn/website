@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import Layout from '@common/Layout';
-import { Container } from '@components/global';
+import { graphql } from 'gatsby'
 
 import Footer from '@sections/Footer';
 import Navbar from '@common/Navbar';

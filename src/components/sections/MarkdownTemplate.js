@@ -67,6 +67,9 @@ const Article = styled.div`
   --deckgo-highlight-code-token-comment: #0914ff;
   --deckgo-highlight-code-carbon-background: #00075f;
   --deckgo-highlight-code-carbon-box-shadow: none;
+  --deckgo-highlight-code-container-height: max-content;
+  --deckgo-highlight-code-carbon-overflow: hidden;
+  --deckgo-highlight-code-scroll: none;
 
   code {
     element::-webkit-scrollbar { width: 0 !important }

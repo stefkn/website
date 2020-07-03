@@ -37,7 +37,7 @@ Hey look a table
 
 Here's what we've all been waiting for
 
-```
+```javascript
 function loadDogSong() {
     var request = new XMLHttpRequest();
     request.open('GET', "/dogsong.mp3", true);
@@ -57,6 +57,7 @@ function loadAndyTalk(data) {
         andyTalkBuffer = buffer;
       }, onError);
 }
+
 ```
 
 Here's a sentence with a footnote. [^1]

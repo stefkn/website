@@ -36,22 +36,26 @@ const commentstyle = {
   'display': 'contents'
 }
 const neumorph = {
-  'height': '45px',
-  'width': '160px',
+  'height': '56px',
+  'width': '64px',
   'borderRadius': '6px',
-  'background': 'rgb(231, 61, 149)',
-  'box-shadow': 'rgb(23, 33, 148) 22px 19px 32px',
+  'background-color': 'rgb(230, 200, 200)',
+  'mixBlendMode': 'color-dodge',
+  'boxShadow': 'rgb(23, 33, 148) 22px 19px 32px',
   'marginTop': '1em',
   'position': 'absolute',
-  'zIndex': '5'
+  'zIndex': '5',
+  'cursor': 'pointer'
 }
 const neumorphtext = {
-  'color': 'white',
+  'mixBlendMode': 'normal',
+  'color': '#ff9c9c',
   'fontFamily': 'IBM Plex Mono',
   'fontWeight': '500',
   'paddingLeft': '10px',
-  'paddingTop': '5px',
-  'fontSize': '21px'
+  'paddingTop': '12px',
+  'fontSize': '42px',
+  'letterSpacing': '-40px'
 }
 
 const Header = () => (

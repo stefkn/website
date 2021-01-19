@@ -7,8 +7,14 @@ const normalize = `
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
+  ::selection {
+    background: #ff418d7a;
+    opacity: 0.85;
+  }
+
   body {
     font-family: ${props => props.theme.font.secondary};
+    background: #f7f7f7;
   }
 
   h1, h2, h3, p {

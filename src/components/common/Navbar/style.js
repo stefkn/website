@@ -4,10 +4,10 @@ import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;
-  background-color: #0014ff;
+  // background-color: ${props => props.theme.color.primary};
   position: fixed;
   width: 100%;
-  height: 8vh;
+  height: 1vh;
   top: 0;
   z-index: 1000;
 `;
@@ -38,6 +38,7 @@ export const NavListWrapper = styled.div`
         }
       `};
   }
+
 `;
 
 export const NavItem = styled.li`
@@ -63,11 +64,113 @@ export const MobileMenu = styled.div`
 
   width: 100%;
   height: 18vh;
-  /* background: #0014ff; */
+  /* background: ${props => props.theme.color.primary}; */
   /* background-color: white; */
-  background: -moz-linear-gradient(top, rgba(0,20,255,1) 0%, rgba(229,229,229,0.02) 98%, rgba(229,229,229,0) 100%);
+  /* background: -moz-linear-gradient(top, rgba(0,20,255,1) 0%, rgba(229,229,229,0.02) 98%, rgba(229,229,229,0) 100%); */
   /* background: -webkit-linear-gradient(top, rgba(0,20,255,1) 0%,rgba(229,229,229,0.02) 98%,rgba(229,229,229,0) 100%); */
-  background: linear-gradient(to bottom, rgba(0,20,255,1) 0%,rgb(254, 47, 132) 98%,rgb(254, 47, 132) 100%);
+  background: linear-gradient(to bottom,rgba(0, 20, 255, 0.93) 0%,rgb(254,47,132) 98%,rgb(254,47,132) 100%);
+
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+
+
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  @keyframes fadeOut{
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
 `;
 
 export const Brand = styled.div`

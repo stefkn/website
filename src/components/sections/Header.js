@@ -75,12 +75,14 @@ const Header = () => (
       }
     `}
     render={data => (
-      <HeaderWrapper>
+      <HeaderWrapper id="header-wrapper">
         <Container>
           <Grid>
+            <ArtBackground></ArtBackground>
             <Art>
               <Img fluid={data.art_headerbg.childImageSharp.fluid} />
             </Art>
+            <TextBackground></TextBackground>
             <Text>
               <h1 style={headerstyle} >
                 Hello.
@@ -89,8 +91,8 @@ const Header = () => (
               <p className="subtext" style={headersecondarystyle}>
                 Stefan Kenichiro Nowak is <br /> a full-stack software engineer <br /> in 🇬🇧 London, UK.
               </p>
-              {/* <div style={neumorph}>
-                <p style={neumorphtext}>Click me!</p>
+              {/* <div style={neumorph} id="disable-animation-btn">
+                <p style={neumorphtext} id="disable-animation-text">🎞✕</p>
               </div> */}
             </Text>
           </Grid>

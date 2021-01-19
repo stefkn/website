@@ -240,7 +240,7 @@ const HeaderWrapper = styled.header`
 `;
 
 const Art = styled.figure`
-  width: 130%;
+  width: 100%;
   margin: 0;
   top: 16px;
   z-index: 0;
@@ -253,6 +253,10 @@ const Art = styled.figure`
       width: 100%;
       top: -101px;
     }
+  }
+
+  div picture img {
+    top: 20px;
   }
 `;
 

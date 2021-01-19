@@ -192,13 +192,20 @@ const About = () => (
       <Section id="about">
         <Frontmatter>
             <div>
-              <h2>Hi there.</h2>
+              <h2 style={{'letterSpacing': '12px'}}>
+                🌓🌍🛰
+              </h2>
+              <h2 style={{'letterSpacing': '8px'}}>
+                hello world<span className="blinking-cursor">_</span>
+              </h2>
               <p>
-              Thanks for stopping by.
-
-I'm a developer from London, UK; a freshly-minted, bright-eyed, dewy-faced computer science undergraduate-and-postgraduate-graduate by means of King's College London, my sanity, and an eye-watering amount of government-subsidized debt, et al.
-
-My key language competencies are currently Python, JavaScript and Java. I'm currently exploring Kotlin, Rust and Go.
+                I'm a software developer <img style={{'height': '24px'}} src="https://emojis.slackmojis.com/emojis/images/1510581338/3186/developers.gif?1510581338"></img> from south-west London.
+              </p>
+              <p>
+                I'm into—in no particular order—overusing emojis, friendly teams, web technologies, animal friends (I work at a literal <a href="https://lifeat.tails.com/tag/engineering/">dog company!</a> <img style={{'height': '24px'}} src="https://emojis.slackmojis.com/emojis/images/1595173218/9723/dog_cool.gif?1595173218"></img>), general tech stuff, <span style={{'fontFamily': 'Comic Sans MS', 'fontWeight': '600'}}>graphic design is my passion,</span> <a href="https://upload.wikimedia.org/wikipedia/commons/d/d2/The_Covfefe_Presidency_%2834287334213%29.jpg">covfefe</a>, learning all sorts, <b>food</b> (very important) and sleep. That list was nonexhaustive.
+              </p>
+              <p>
+                Professionally, I'm strongest in backend development using Python (Flask & uWSGI), MySQL and modern JavaScript frontends. I've had experience using Java, Scala, Haskell, Kotlin, Swift and Go.
               </p>
             </div>
         </Frontmatter>

@@ -217,7 +217,7 @@ const About = () => (
 const Frontmatter = styled.div`
   padding-left: 16px;
   padding-right: 16px;
-  max-width: 1200px;
+  max-width: 816px;
   margin: 0 auto;
 
   h2 {

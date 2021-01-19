@@ -102,6 +102,108 @@ const Header = () => (
   />
 );
 
+const TextBackground = styled.div`
+  @keyframes animatebgs {
+    0% { transform: skewY(-13deg) translate3d(0, 50%, 0); opacity: 0%;}
+    100% { transform: skewY(-13deg) translate3d(0, 0, 0); opacity: 90%;}
+  }
+
+  transform: skewY(-13deg);
+  opacity: 0%;
+  animation: animatebgs 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
+  background: linear-gradient(90deg,rgb(129, 114, 255) 0%,rgba(112, 176, 255, 0.9) 35%,rgba(255,223,223,0.38) 100%);
+  // background: linear-gradient(90deg,rgb(255, 255, 255) 0%,rgba(255, 23, 23, 0.9) 35%,rgba(255, 223, 223, 0.38) 100%);
+  position: absolute;
+  z-index: 0;
+  mix-blend-mode: hard-light;
+  border-radius: 10px;
+  height: 500px;
+  bottom: 943px;
+  left: -21vw;
+  width: 66vw;
+
+  @media (max-width: 380px) {
+    height: 400px;
+    bottom: 420px;
+    left: -22vw;
+    width: 72vw;
+  }
+  @media (max-width: 680px) {
+    bottom: 420px;
+    left: 3vw;
+    display: none;
+  }
+  `
+
+// TODO: Fix for multi screen sizes!
+const ArtBackground = styled.div`
+  @keyframes animatebgs {
+    0% { transform: skewY(-13deg) translate3d(0, 50%, 0); opacity: 0%;}
+    100% { transform: skewY(-13deg) translate3d(0, 0, 0); opacity: 90%;}
+  }
+
+  transform: skewY(-13deg);
+  opacity: 0%;
+  animation: animatebgs 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
+
+
+  // background-color: #000866;
+  // background: linear-gradient(90deg, rgb(46, 42, 105) 0%, rgba(9,9,121,1) 35%, rgb(255, 120, 120) 100%);
+  // background: linear-gradient(90deg,rgba(24, 22, 56, 0.42) 0%,rgb(15, 15, 148) 35%,rgba(255, 120, 120, 0.55) 100%);
+  // background: linear-gradient(90deg,rgba(0, 0, 0, 0.42) 0%,rgba(123, 28, 90, 0.76) 35%,rgba(94, 239, 88, 0.87) 100%);
+  background: linear-gradient(90deg,#004daa00 0%,#ff006852 35%,rgba(79, 255, 72, 0) 100%);
+
+  position: absolute;
+  z-index: 0;
+  mix-blend-mode: difference;
+  border-radius: 10px;
+
+  // height: 62vh;
+  // bottom: 328px;
+  // width: 34vw;
+
+  height: 600px;
+  bottom: 555px;
+  left: 20vw;
+  width: 66vw;
+
+  @media (max-width: 380px) {
+    display: none;
+  }
+
+  // between here defaults apply ---v^
+
+  @media (min-width: 420px) {
+
+  }
+
+  @media (min-width: ${props => props.theme.screen.xs}) {
+    max-width: 540px;
+  }
+
+  @media (min-width: ${props => props.theme.screen.sm}) {
+    max-width: 720px;
+  }
+
+  @media (min-width: ${props => props.theme.screen.md}) {
+    max-width: 960px;
+  }
+
+  @media (max-width: 1200px) {
+    bottom: 714px;
+  }
+
+  @media (min-width: ${props => props.theme.screen.lg}) {
+    max-width: 1200px;
+  }
+`
+
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
   padding-top: 96px;

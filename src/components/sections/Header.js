@@ -8,14 +8,21 @@ import ExternalLink from '@common/ExternalLink';
 
 const headerstyle = {
   'fontFamily': 'Rubik',
-  'fontSize': '5em',
-  'color': 'white',
+  'fontSize': '114px',
+  // 'color': 'rgb(255, 107, 107)',
+  // 'mixBlendMode': 'difference',
+  'mixBlendMode': 'color-dodge',
+  'color': 'rgb(230, 200, 200)',
   'fontWeight': '400',
-  'zIndex': '5'
+  'marginLeft': '-9px',
+  'letterSpacing': '-5px',
+  'zIndex': '5',
+  'marginBottom': '21px'
 }
 const headersecondarystyle = {
   'fontFamily': 'IBM Plex Mono',
-  'fontWeight': '300',
+  'fontWeight': '400',
+  'mixBlendMode': 'hard-light',
   'fontSize': '1em',
   'color': 'white',
   'lineHeight': '24px',

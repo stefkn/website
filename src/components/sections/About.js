@@ -229,6 +229,71 @@ const Frontmatter = styled.div`
     text-align: left;
     margin-bottom: 96px;
   }
+
+  p {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+
+  img {
+    vertical-align: -5px;
+  }
+
+
+
+  .blinking-cursor {
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+    animation: 1s blink step-end infinite;
+
+
+  }
+
+  @keyframes "blink" {
+    from, to {
+      color: #ffffff00;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: #ffffff00;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
 `;
 
 export default About;

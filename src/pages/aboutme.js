@@ -13,7 +13,7 @@ const AboutMe = () => (
   <Layout>
     <Navbar />
     <MainMatter>
-      <h1>About Me</h1>
+      <h1>🙋🏻‍♂️ About Me</h1>
       <p>Hello.</p>
       <Link to="/">Go back to the homepage</Link>
     </MainMatter>

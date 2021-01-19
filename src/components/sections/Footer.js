@@ -77,13 +77,27 @@ const Footer = () => (
   />
 );
 
+const SmallText = styled.div`
+  p {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 14px !important;
+    margin-top: 10px;
+    color: white;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+`
+
 const SocialIcons = styled.div`
   display: flex;
 
   img {
     margin: 0 8px;
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {
@@ -101,6 +115,8 @@ const Copyright = styled.div`
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
   color: white;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
 
   a {
     text-decoration: none;
@@ -113,6 +129,7 @@ const Art = styled.figure`
   justify-content: center;
   margin: 0;
   margin-top: 48px;
+  top: 16px;
 `;
 
 const StyledContainer = styled(Container)`

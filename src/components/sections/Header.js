@@ -11,7 +11,7 @@ const headerstyle = {
   'fontSize': '114px',
   // 'color': 'rgb(255, 107, 107)',
   // 'mixBlendMode': 'difference',
-  'mixBlendMode': 'color-dodge',
+  // 'mixBlendMode': 'color-dodge',
   'color': 'rgb(230, 200, 200)',
   'fontWeight': '400',
   'marginLeft': '-9px',

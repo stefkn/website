@@ -227,6 +227,7 @@ const Frontmatter = styled.div`
     grid-template-columns: 1fr;
     text-align: left;
     margin-bottom: 96px;
+    max-width: 80vw;
   }
 
   p {

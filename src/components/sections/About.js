@@ -215,7 +215,9 @@ const Frontmatter = styled.div`
   padding-left: 16px;
   padding-right: 16px;
   max-width: 816px;
-  margin: 0 auto;
+  display: block;
+  margin: 16px auto;
+  max-width: 50vw;
 
   h2 {
     margin-bottom: 16px;

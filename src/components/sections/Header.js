@@ -205,7 +205,10 @@ const ArtBackground = styled.div`
 `
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
+  position: absolute;
+  max-width: 100vw;
+  width: 100%;
+  top: 3vh;
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {

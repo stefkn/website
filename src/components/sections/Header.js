@@ -78,11 +78,11 @@ const Header = () => (
       <HeaderWrapper id="header-wrapper">
         <Container>
           <Grid>
-            <ArtBackground></ArtBackground>
+            {/* <ArtBackground></ArtBackground> */}
             <Art>
               <Img fluid={data.art_headerbg.childImageSharp.fluid} />
             </Art>
-            <TextBackground></TextBackground>
+            {/* <TextBackground></TextBackground> */}
             <Text>
               <h1 style={headerstyle} >
                 Hello.

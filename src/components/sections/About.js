@@ -192,9 +192,6 @@ const About = () => (
       <Section id="about">
         <Frontmatter>
             <div>
-              <h2 style={{'letterSpacing': '12px'}}>
-                🌓🌍🛰
-              </h2>
               <h2 style={{'letterSpacing': '8px'}}>
                 hello world<span className="blinking-cursor">_</span>
               </h2>

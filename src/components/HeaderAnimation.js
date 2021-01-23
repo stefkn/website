@@ -44,20 +44,22 @@ class HeaderAnimation extends React.Component {
     // let's set this thing up
     document.getElementById('header-animation-container').append(renderer.domElement);
     renderer.domElement.setAttribute("id", "animation-canvas");
+
+    // sticky navbar on scroll down
     renderer.domElement.style.position = 'sticky';
     document.getElementById('header-animation-container').style.position = 'sticky';
-    document.getElementById('header-animation-container').style.top = '-894px';
-    window.dispatchEvent(new Event('resize'));
-    renderer.setAnimationLoop(t => {
-        composer.render();
-    });
 
     // ----
     // Main
     // ----
 
+    window.dispatchEvent(new Event('resize'));
+    renderer.setAnimationLoop(t => {
+        composer.render();
+    });
+
+
     scene.background = new $.Color('#0014fe');
-    // scene.fog = new $.Fog(scene.background, 3, 2);
     camera.position.set(0, 0, 5);
 
     // Make Non Indexed Geometry

@@ -39,18 +39,11 @@ class HeaderAnimation extends React.Component {
     // Main
     // ----
 
-    scene.background = new $.Color('#0014ff');
-    scene.fog = new $.Fog(scene.background, 2, 3);
+    scene.background = new $.Color('#0014fe');
+    // scene.fog = new $.Fog(scene.background, 3, 2);
     camera.position.set(0, 0, 5);
 
-    const light0 = new $.DirectionalLight('#fe317e', 1);
-    scene.add(light0);
-
-    const light1 = new $.PointLight('red', 1, 8, 0);
-    scene.add(light1);
-
-    //// Make Non Indexed Geometry
-
+    // Make Non Indexed Geometry
     let geom;
     {
         const geom_ = new $.TorusKnotBufferGeometry(5, .3, 30, 4, 4, 6);

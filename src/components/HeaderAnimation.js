@@ -57,18 +57,14 @@ class HeaderAnimation extends React.Component {
 
     // Compute Morph Attrib - Normal
     const geom_ = new $.BufferGeometry();
-    geom_.setAttribute('position', new $.BufferAttribute(positions0, 3));
+    geom_.setAttribute('position', new $.BufferAttribute(positions0, 6));
     geom_.computeVertexNormals();
     geom.morphAttributes.position = [geom_.attributes.position];
     geom.morphAttributes.normal = [geom_.attributes.normal];
     geom_.dispose();
 
-    //// Make Mesh{}
-
-    const mat = new $.MeshPhongMaterial({
-        morphTargets: true, morphNormals: false, side: $.DoubleSide,
-        transparent: true, opacity: 0.5, depthWrite: true
-    });
+    // Make Mesh{}
+    const mat = new $.MeshBasicMaterial( { color: '#000867' } );
     const mesh = new $.Mesh(geom, mat);
     mesh.morphTargetInfluences = [1, 1];
     scene.add(mesh);

@@ -1,8 +1,8 @@
 # steken.dev
 
-Personal website using Gatsby, Styled Components, GraphQL and a few other things. 
+Personal website using Gatsby, Styled Components, GraphQL and a few other things.
 
-Based on an absurd Gatsby starter by https://github.com/ajayns. 
+Based on an absurd Gatsby starter by https://github.com/ajayns.
 
 ## Installation
 

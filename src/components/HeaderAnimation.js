@@ -69,24 +69,12 @@ class HeaderAnimation extends React.Component {
     mesh.morphTargetInfluences = [1, 1];
     scene.add(mesh);
 
-    //// PostProcessing
-
+    // PostProcessing
     const renderPass = new RenderPass(scene, camera);
-    // const unrealBloomPass = new UnrealBloomPass(renderer.getDrawingBufferSize(), 1, 1, 0.5);
     composer.addPass(renderPass);
-    // composer.addPass(unrealBloomPass);
 
-    //// Animate
-
-    // gsap.timeline({ repeat: 1e10 })
-        // .to(mesh.morphTargetInfluences, { duration: 10, '0': 0.1, ease: 'bounce' })
-        // .to(mesh.morphTargetInfluences, { delay: 10, duration: 3, '0': 2, ease: 'power2' })
-        // .play();
-    const timeline1 = gsap.timeline({ repeat: 1e10 })
-        .to(mesh.rotation, { duration: 400, y: Math.PI * 2, ease: 'none' })
-        .play();
-    const timeline2 = gsap.timeline({ repeat: 1e10 })
-        .to(mesh.rotation, { duration: 600, x: Math.PI * 2, ease: 'none' })
+    gsap.timeline({ repeat: 1e10 })
+        .to(mesh.rotation, { duration: 50, y: Math.PI * 2, ease: 'none' })
         .play();
     // gsap.timeline({ repeat: 1e10 })
     //     .to(light1, { duration: 1, distance: 0.1, ease: 'bounce' })

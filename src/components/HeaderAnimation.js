@@ -21,6 +21,23 @@ class HeaderAnimation extends React.Component {
             camera.aspect = clientWidth / clientHeight;
             camera.updateProjectionMatrix();
             composer.setSize(document.getElementById('header-wrapper').clientWidth, document.getElementById('header-wrapper').clientHeight);
+            // Sticky navbar responsiveness
+            switch (true) {
+                case clientWidth > 1199:
+                    document.getElementById('header-animation-container').style.top = '-811px';
+                break;
+                case clientWidth > 991:
+                    document.getElementById('header-animation-container').style.top = '-641px';
+                break;
+                case clientWidth > 767:
+                    document.getElementById('header-animation-container').style.top = '-1111px';
+                break;
+                case clientWidth > 575:
+                    document.getElementById('header-animation-container').style.top = '-894px';
+                break;
+                default:
+                    document.getElementById('header-animation-container').style.top = '-781px';
+            }
         }
     });
 

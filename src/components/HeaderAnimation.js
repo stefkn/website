@@ -77,25 +77,14 @@ class HeaderAnimation extends React.Component {
         .to(mesh.rotation, { duration: 50, y: Math.PI * 2, ease: 'none' })
         .play();
     // gsap.timeline({ repeat: 1e10 })
-    //     .to(light1, { duration: 1, distance: 0.1, ease: 'bounce' })
-    //     .play()
-
-    // toggle pause on click
-    // window.addEventListener('mousedown', () => {
-    //     if (timeline1.paused()) {
-    //         timeline1.play();
-    //         timeline2.play();
-    //     } else {
-    //         timeline1.pause();
-    //         timeline2.pause();
-    //     }
-    // })
+    //     .to(mesh.rotation, { duration: 200, x: Math.PI * 2, ease: 'none' })
+    //     .play();
   }
 
   render() {
     const HeaderAnimContainer = styled.div`
         canvas {
-            width: 100%;
+            width: 98vw;
             height: 70.5vh;
             display: block;
             position: absolute;

@@ -46,12 +46,12 @@ class HeaderAnimation extends React.Component {
     // Make Non Indexed Geometry
     let geom;
     {
-        const geom_ = new $.TorusKnotBufferGeometry(5, .3, 30, 4, 4, 6);
+        // const geom_ = new $.TorusKnotBufferGeometry(5, .3, 30, 4, 4, 6);
+        // const geom_ = new $.TorusKnotBufferGeometry( 10, 3, 10, 4 );
+        const geom_ = new $.TorusKnotBufferGeometry(12, 3, 12, 4, 1, 8 );
         geom = geom_.toNonIndexed();
         geom_.dispose();
     }
-
-    //// Compute Morph Attrib - Position
 
     const positions0 = new Float32Array(geom.attributes.position.array.length);
     const $vec0 = new $.Vector3();

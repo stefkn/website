@@ -15,18 +15,11 @@ class HeaderAnimation extends React.Component {
     // fit canvas to header block
     window.addEventListener('resize', () => {
         if (window.location.pathname === '/') {
-            // code for index page
-            // console.log("windowResize");
             const { clientWidth, clientHeight } = renderer.domElement;
             renderer.setPixelRatio(window.devicePixelRatio);
             renderer.setSize(clientWidth, clientHeight, false);
             camera.aspect = clientWidth / clientHeight;
             camera.updateProjectionMatrix();
-            // composer.setPixelRatio(window.devicePixelRatio);
-            // console.log(document.getElementById('header-wrapper').clientHeight)
-            // document.getElementById('header-animation-container').height = document.getElementById('header-wrapper').clientHeight;
-            // document.getElementById('header-animation-container').width = window.width;
-            // composer.setSize(clientWidth, clientHeight);
             composer.setSize(document.getElementById('header-wrapper').clientWidth, document.getElementById('header-wrapper').clientHeight);
         }
     });

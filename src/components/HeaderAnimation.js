@@ -4,16 +4,13 @@ import gsap from "gsap"
 import {EffectComposer, RenderPass} from "postprocessing";
 import styled from 'styled-components';
 
-// var OrbitControls = require('three-orbit-controls')($)
-
 class HeaderAnimation extends React.Component {
   componentDidMount() {
-
+    // get the basics done
     const renderer = new $.WebGLRenderer({ antialias: false });
     const scene = new $.Scene();
     const camera = new $.PerspectiveCamera(75, 2, .1, 100);
     const composer = new EffectComposer(renderer);
-    // const controls = new OrbitControls(camera, renderer.domElement);
 
     // fit canvas to header block
     window.addEventListener('resize', () => {

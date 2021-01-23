@@ -24,26 +24,7 @@ class HeaderAnimation extends React.Component {
         }
     });
 
-    window.addEventListener('scroll', () => {
-        // TODO: When it's almost out of frame, make the position: static and height just the navbar height
-    })
-
-    // Hide animation button
-    // const disableButton = document.getElementById('disable-animation-btn');
-    // function handleToggleAnimation () {
-    //     const animationContainer = document.getElementById('header-animation-container');
-    //     if (animationContainer.style.display != "none") {
-    //         document.getElementById('header-animation-container').style.display = "none";
-    //         document.getElementById('disable-animation-text').innerHTML = "🎞";
-    //     } else {
-    //         document.getElementById('header-animation-container').style.display = "block";
-    //         document.getElementById('disable-animation-text').innerHTML = "🎞✕";
-    //     }
-    // }
-    // disableButton.addEventListener('click', () => handleToggleAnimation())
-    // disableButton.addEventListener('touch', () => handleToggleAnimation())
-
-    // begin
+    // let's set this thing up
     document.getElementById('header-animation-container').append(renderer.domElement);
     window.dispatchEvent(new Event('resize'));
     renderer.setAnimationLoop(t => {

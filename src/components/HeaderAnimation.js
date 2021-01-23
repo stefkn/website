@@ -26,14 +26,14 @@ class HeaderAnimation extends React.Component {
 
     // let's set this thing up
     document.getElementById('header-animation-container').append(renderer.domElement);
+    renderer.domElement.setAttribute("id", "animation-canvas");
+    renderer.domElement.style.position = 'sticky';
+    document.getElementById('header-animation-container').style.position = 'sticky';
+    document.getElementById('header-animation-container').style.top = '-894px';
     window.dispatchEvent(new Event('resize'));
     renderer.setAnimationLoop(t => {
         composer.render();
-        // controls.update();
     });
-    // renderer.setAnimationLoop(t => {
-    //     composer.render();
-    // });
 
     // ----
     // Main

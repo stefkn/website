@@ -29,34 +29,7 @@ const headersecondarystyle = {
   'zIndex': '5',
   'position': 'relative'
 }
-const commentstyle = {
-  'fontFamily': 'Roboto',
-  'fontSize': '10px',
-  'color': 'white',
-  'display': 'contents'
-}
-const neumorph = {
-  'height': '56px',
-  'width': '64px',
-  'borderRadius': '6px',
-  'background-color': 'rgb(230, 200, 200)',
-  'mixBlendMode': 'color-dodge',
-  'boxShadow': 'rgb(23, 33, 148) 22px 19px 32px',
-  'marginTop': '1em',
-  'position': 'absolute',
-  'zIndex': '5',
-  'cursor': 'pointer'
-}
-const neumorphtext = {
-  'mixBlendMode': 'normal',
-  'color': '#ff9c9c',
-  'fontFamily': 'IBM Plex Mono',
-  'fontWeight': '500',
-  'paddingLeft': '10px',
-  'paddingTop': '12px',
-  'fontSize': '42px',
-  'letterSpacing': '-40px'
-}
+
 
 const Header = () => (
   <StaticQuery
@@ -78,22 +51,16 @@ const Header = () => (
       <HeaderWrapper id="header-wrapper">
         <Container>
           <Grid>
-            {/* <ArtBackground></ArtBackground> */}
-            <Art>
-              <Img fluid={data.art_headerbg.childImageSharp.fluid} />
-            </Art>
-            {/* <TextBackground></TextBackground> */}
+            <ArtBackground></ArtBackground>
+            <Art><Img fluid={data.art_headerbg.childImageSharp.fluid} /></Art>
             <Text>
               <h1 style={headerstyle} >
-                Hello.
+                Hi there.
               </h1>
               <br />
               <p className="subtext" style={headersecondarystyle}>
                 Stefan Kenichiro Nowak is <br /> a full-stack software engineer <br /> in 🇬🇧 London, UK.
               </p>
-              {/* <div style={neumorph} id="disable-animation-btn">
-                <p style={neumorphtext} id="disable-animation-text">🎞✕</p>
-              </div> */}
             </Text>
           </Grid>
         </Container>
@@ -101,42 +68,6 @@ const Header = () => (
     )}
   />
 );
-
-const TextBackground = styled.div`
-  @keyframes animatebgs {
-    0% { transform: skewY(-13deg) translate3d(0, 50%, 0); opacity: 0%;}
-    100% { transform: skewY(-13deg) translate3d(0, 0, 0); opacity: 90%;}
-  }
-
-  transform: skewY(-13deg);
-  opacity: 0%;
-  animation: animatebgs 2s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-
-  background: linear-gradient(90deg,rgb(129, 114, 255) 0%,rgba(112, 176, 255, 0.9) 35%,rgba(255,223,223,0.38) 100%);
-  // background: linear-gradient(90deg,rgb(255, 255, 255) 0%,rgba(255, 23, 23, 0.9) 35%,rgba(255, 223, 223, 0.38) 100%);
-  position: absolute;
-  z-index: 0;
-  mix-blend-mode: hard-light;
-  border-radius: 10px;
-  height: 500px;
-  bottom: 943px;
-  left: -21vw;
-  width: 66vw;
-
-  @media (max-width: 380px) {
-    height: 400px;
-    bottom: 420px;
-    left: -22vw;
-    width: 72vw;
-  }
-  @media (max-width: 680px) {
-    bottom: 420px;
-    left: 3vw;
-    display: none;
-  }
-  `
 
 // TODO: Fix for multi screen sizes!
 const ArtBackground = styled.div`

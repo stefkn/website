@@ -16,7 +16,7 @@ class HeaderAnimation extends React.Component {
     window.addEventListener('resize', () => {
         if (window.location.pathname === '/') {
             const { clientWidth, clientHeight } = renderer.domElement;
-            renderer.setPixelRatio(window.devicePixelRatio/3);
+            renderer.setPixelRatio(window.devicePixelRatio/3); // TODO: ---> Make this conditional on xtra wide high def screens
             renderer.setSize(clientWidth, clientHeight, false);
             camera.aspect = clientWidth / clientHeight;
             camera.updateProjectionMatrix();

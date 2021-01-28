@@ -82,14 +82,6 @@ const ArtBackground = styled.div`
   animation: animatebgs 2s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
-
-
-
-  // background-color: #000866;
-  // background: linear-gradient(90deg, rgb(46, 42, 105) 0%, rgba(9,9,121,1) 35%, rgb(255, 120, 120) 100%);
-  // background: linear-gradient(90deg,rgba(24, 22, 56, 0.42) 0%,rgb(15, 15, 148) 35%,rgba(255, 120, 120, 0.55) 100%);
-  // background: linear-gradient(90deg,rgba(0, 0, 0, 0.42) 0%,rgba(123, 28, 90, 0.76) 35%,rgba(94, 239, 88, 0.87) 100%);
-  // background: linear-gradient(90deg,#004daa00 0%,#ff006852 35%,rgba(79, 255, 72, 0) 100%);
   background: linear-gradient(107deg,#004daa00 -12%,#ff00e0b8 1%,rgba(79,255,72,0) 70%);
 
   position: absolute;
@@ -97,12 +89,7 @@ const ArtBackground = styled.div`
   mix-blend-mode: difference;
   border-radius: 10px;
 
-  // height: 62vh;
-  // bottom: 328px;
-  // width: 34vw;
-
   height: 600px;
-  // bottom: 555px;
   bottom: 285px;
   left: 20vw;
   width: 66vw;
@@ -110,8 +97,6 @@ const ArtBackground = styled.div`
   @media (max-width: 380px) {
     display: none;
   }
-
-  // between here defaults apply ---v^
 
   @media (min-width: 420px) {
 

@@ -59,15 +59,16 @@ class HeaderAnimation extends React.Component {
     });
 
 
-    scene.background = new $.Color('#0014fe');
+    // scene.background = new $.Color('#0014fe');
+    scene.background = new $.Color('#2f39ae');
     camera.position.set(0, 0, 5);
 
     // Make Non Indexed Geometry
     let geom;
     {
         // const geom_ = new $.TorusKnotBufferGeometry(5, .3, 30, 4, 4, 6);
-        // const geom_ = new $.TorusKnotBufferGeometry( 10, 3, 10, 4 );
-        const geom_ = new $.TorusKnotBufferGeometry(12, 3, 12, 4, 1, 8 );
+        const geom_ = new $.TorusKnotBufferGeometry( 10, 3, 50, 4 );
+        // const geom_ = new $.TorusKnotBufferGeometry(2, 2, 24, 2, 2, 4, 6 );
         geom = geom_.toNonIndexed();
         geom_.dispose();
     }

@@ -88,7 +88,8 @@ const ArtBackground = styled.div`
   // background: linear-gradient(90deg, rgb(46, 42, 105) 0%, rgba(9,9,121,1) 35%, rgb(255, 120, 120) 100%);
   // background: linear-gradient(90deg,rgba(24, 22, 56, 0.42) 0%,rgb(15, 15, 148) 35%,rgba(255, 120, 120, 0.55) 100%);
   // background: linear-gradient(90deg,rgba(0, 0, 0, 0.42) 0%,rgba(123, 28, 90, 0.76) 35%,rgba(94, 239, 88, 0.87) 100%);
-  background: linear-gradient(90deg,#004daa00 0%,#ff006852 35%,rgba(79, 255, 72, 0) 100%);
+  // background: linear-gradient(90deg,#004daa00 0%,#ff006852 35%,rgba(79, 255, 72, 0) 100%);
+  background: linear-gradient(107deg,#004daa00 -12%,#ff00e0b8 1%,rgba(79,255,72,0) 70%);
 
   position: absolute;
   z-index: 0;

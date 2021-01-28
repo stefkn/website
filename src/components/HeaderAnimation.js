@@ -66,9 +66,7 @@ class HeaderAnimation extends React.Component {
     // Make Non Indexed Geometry
     let geom;
     {
-        // const geom_ = new $.TorusKnotBufferGeometry(5, .3, 30, 4, 4, 6);
         const geom_ = new $.TorusKnotBufferGeometry( 10, 3, 50, 4 );
-        // const geom_ = new $.TorusKnotBufferGeometry(2, 2, 24, 2, 2, 4, 6 );
         geom = geom_.toNonIndexed();
         geom_.dispose();
     }
@@ -98,9 +96,9 @@ class HeaderAnimation extends React.Component {
     gsap.timeline({ repeat: 1e10 })
         .to(mesh.rotation, { duration: 50, y: Math.PI * 2, ease: 'none' })
         .play();
-    // gsap.timeline({ repeat: 1e10 })
-    //     .to(mesh.rotation, { duration: 200, x: Math.PI * 2, ease: 'none' })
-    //     .play();
+    gsap.timeline({ repeat: 1e10 })
+        .to(mesh.rotation, { duration: 200, x: Math.PI * 2, ease: 'none' })
+        .play();
   }
 
   render() {

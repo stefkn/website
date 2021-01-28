@@ -7,17 +7,18 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const headerstyle = {
-  'fontFamily': 'Rubik',
   'fontSize': '114px',
-  // 'color': 'rgb(255, 107, 107)',
-  // 'mixBlendMode': 'difference',
-  // 'mixBlendMode': 'color-dodge',
   'color': 'rgb(230, 200, 200)',
-  'fontWeight': '400',
   'marginLeft': '-9px',
-  'letterSpacing': '-5px',
   'zIndex': '5',
-  'marginBottom': '21px'
+  'marginBottom': '21px',
+  'letterSpacing': '-.01em',
+  'fontFamily': 'Inter,Helvetica,sans-serif',
+  'fontWeight': '500',
+  'boxSizing': 'border-box',
+  'display': 'inline-block',
+  'textDecoration': 'none',
+  'lineHeight': '86px',
 }
 const headersecondarystyle = {
   'fontFamily': 'IBM Plex Mono',

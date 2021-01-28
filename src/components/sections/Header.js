@@ -101,7 +101,8 @@ const ArtBackground = styled.div`
   // width: 34vw;
 
   height: 600px;
-  bottom: 555px;
+  // bottom: 555px;
+  bottom: 285px;
   left: 20vw;
   width: 66vw;
 

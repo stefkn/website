@@ -7,7 +7,7 @@ import styled from 'styled-components';
 class HeaderAnimation extends React.Component {
   componentDidMount() {
     // get the basics done
-    const renderer = new $.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+    const renderer = new $.WebGLRenderer({ antialias: false, powerPreference: "high-performance" });
     const scene = new $.Scene();
     const camera = new $.PerspectiveCamera(75, 2, .1, 100);
     const composer = new EffectComposer(renderer);

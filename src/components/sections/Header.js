@@ -131,6 +131,9 @@ const HeaderWrapper = styled.header`
   width: 100%;
   top: 3vh;
   padding-top: 96px;
+  height: 70.5vh;
+  display: block;
+  background: #2f39ae;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;

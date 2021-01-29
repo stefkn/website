@@ -38,8 +38,9 @@ class HeaderAnimation extends React.Component {
                 default:
                     document.getElementById('header-animation-container').style.top = '-781px';
             }
-            // Make the wrapper transparent
+            // Make the wrapper and nav transparent -- they are occluding the HeaderAnim while it loads
             document.getElementById('header-wrapper').style.backgroundColor = '#ffffff00';
+            document.getElementsByTagName('nav')[0].style.backgroundColor = '#ffffff00';
         }
     });
 

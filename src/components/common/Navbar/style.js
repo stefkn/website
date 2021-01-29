@@ -4,7 +4,7 @@ import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;
-  // background-color: ${props => props.theme.color.primary};
+  background-color: ${props => props.theme.color.primary};
   position: fixed;
   width: 100%;
   height: 1vh;

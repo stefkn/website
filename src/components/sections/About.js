@@ -1,48 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
 
 import { Section } from '@components/global';
 
-const About = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_deer: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "deer" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_code: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "code" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
+class About extends Component {
+  render() {
+    return (
       <Section id="about">
         <Frontmatter>
               <StyledText>

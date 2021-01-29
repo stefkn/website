@@ -19,9 +19,9 @@ class About extends Component {
               </StyledSmaller>
         </Frontmatter>
       </Section>
-    )}
-  />
-);
+    )
+  }
+}
 
 const StyledText = styled.div`
 overflow-wrap: break-word;

@@ -45,25 +45,56 @@ const About = () => (
     render={data => (
       <Section id="about">
         <Frontmatter>
-            <div>
-              <h2 style={{'letterSpacing': '8px'}}>
-                hello world<span className="blinking-cursor">_</span>
-              </h2>
-              <p>
-                I'm a software developer <img style={{'height': '24px'}} src="https://emojis.slackmojis.com/emojis/images/1510581338/3186/developers.gif?1510581338"></img> from south-west London.
-              </p>
-              <p>
-                I'm into—in no particular order—overusing emojis, friendly teams, web technologies, animal friends (I work at a literal <a href="https://lifeat.tails.com/tag/engineering/">dog company!</a> <img style={{'height': '24px'}} src="https://emojis.slackmojis.com/emojis/images/1595173218/9723/dog_cool.gif?1595173218"></img>), general tech stuff, <span style={{'fontFamily': 'Comic Sans MS', 'fontWeight': '600'}}>graphic design is my passion,</span> <a href="https://upload.wikimedia.org/wikipedia/commons/d/d2/The_Covfefe_Presidency_%2834287334213%29.jpg">covfefe</a>, learning all sorts, <b>food</b> (very important) and sleep. That list was nonexhaustive.
-              </p>
-              <p>
-                Professionally, I'm strongest in backend development using Python (Flask & uWSGI), MySQL and modern JavaScript frontends. I've had experience using Java, Scala, Haskell, Kotlin, Swift and Go.
-              </p>
-            </div>
+              <StyledText>
+              Stefan Kenichiro Nowak is a <u>Software Engineer</u> at tails.com. Before that, he was a student of <u>Computer Science</u> at King's College London.
+              </StyledText>
+              <StyledSmaller>
+              I like working with small and medium-sized teams on projects that have an impact, and I enjoy the challenge of learning to leverage new technologies and best practices. <br />I have over 5 years of experience programming with languages like Python, JavaScript and Java—and I still learn new things every day.
+              </StyledSmaller>
+              <StyledSmaller>
+              Here is a small deer:
+              </StyledSmaller>
         </Frontmatter>
       </Section>
     )}
   />
 );
+
+const StyledText = styled.div`
+overflow-wrap: break-word;
+-webkit-font-smoothing: antialiased;
+letter-spacing: -.04em;
+font-family: Inter, Helvetica, sans-serif;
+font-weight: 400;
+font-style: normal;
+text-transform: none;
+line-height: 1.232;
+font-size: calc(4 * 1rem);
+margin: 2rem 0;
+color: #2f39ae;
+margin-top: 0;
+margin-bottom: 0;
+white-space: pre-wrap;
+margin-top: 2em;
+`;
+
+const StyledSmaller = styled.div`
+overflow-wrap: break-word;
+-webkit-font-smoothing: antialiased;
+font-family: Inter, Helvetica, sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: -.01em;
+text-transform: none;
+line-height: 1.3328;
+font-size: calc(2.2 * 1rem);
+margin: 2rem 0;
+color: #2f39ae;
+margin-top: 0;
+margin-bottom: 0;
+white-space: pre-wrap;
+margin-top: 4em;
+`
 
 const Frontmatter = styled.div`
   padding-left: 16px;

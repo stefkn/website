@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const headerstyle = {
   'fontSize': '114px',
@@ -208,15 +207,6 @@ const Text = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
-  }
-`;
-
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
   }
 `;
 

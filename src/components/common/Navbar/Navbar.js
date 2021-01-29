@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { Link } from 'gatsby';
 import { Container } from '@components/global';

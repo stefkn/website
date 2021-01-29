@@ -10,6 +10,9 @@ export const Nav = styled.nav`
   height: 1vh;
   top: 0;
   z-index: 1000;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
 `;
 
 export const StyledContainer = styled(Container)`

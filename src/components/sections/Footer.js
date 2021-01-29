@@ -58,9 +58,9 @@ const Footer = () => (
               </span>
               <br />
               <SmallText>
-                <p style={{'fontWeight': '500'}}>🦜🧬🦠 / 〄 ♻︎ ☯︎ / .2020 </p>
+                <p style={{'fontWeight': '500'}}>〄 ♻︎ ☯︎</p>
                 <p> MIT License | Hand-distilled in small batches with <a href="https://www.gatsbyjs.org/">Gatsby</a> and <a href="https://reactjs.org/">React</a>.</p>
-                <p>Header animation using <a href="https://threejs.org/">three.js</a> adapted from <a href="https://twitter.com/ycwhk">@ycwhk</a>. Absurd Gatsby starter by <a href="https://github.com/ajayns">@ajayns</a>. Queries by <a href="https://graphql.org/">GraphQL</a>. Served fresh over HTTP by the man, the legend, <a href="https://www.w3.org/People/Berners-Lee/">TimBL.</a></p>
+                <p>Header animation using <a href="https://threejs.org/">three.js</a>. Absurd Gatsby starter by <a href="https://github.com/ajayns">@ajayns</a>. Queries by <a href="https://graphql.org/">GraphQL</a>.</p>
               </SmallText>
             </Copyright>
             <SocialIcons>

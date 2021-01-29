@@ -13,7 +13,7 @@ const headerstyle = {
   'zIndex': '5',
   'marginBottom': '21px',
   'letterSpacing': '-.01em',
-  'fontFamily': 'Inter,Helvetica,sans-serif',
+  'fontFamily': 'Helvetica,sans-serif',
   'fontWeight': '500',
   'boxSizing': 'border-box',
   'display': 'inline-block',
@@ -22,7 +22,8 @@ const headerstyle = {
 }
 const headersecondarystyle = {
   'fontFamily': 'IBM Plex Mono',
-  'fontWeight': '400',
+  'fontWeight': '300',
+  'letterSpacing': '-.01em',
   'mixBlendMode': 'hard-light',
   'fontSize': '1em',
   'color': 'white',

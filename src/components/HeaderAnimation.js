@@ -38,6 +38,8 @@ class HeaderAnimation extends React.Component {
                 default:
                     document.getElementById('header-animation-container').style.top = '-781px';
             }
+            // Make the wrapper transparent
+            document.getElementById('header-wrapper').style.backgroundColor = '#ffffff00';
         }
     });
 
@@ -102,6 +104,7 @@ class HeaderAnimation extends React.Component {
             display: block;
             position: absolute;
             background: #0014ff;
+            z-index: 1;
         }
     `
     return (

@@ -130,7 +130,7 @@ const HeaderWrapper = styled.header`
   width: 100%;
   top: 3vh;
   padding-top: 96px;
-  height: 70.5vh;
+  height: 60em;
   display: block;
   background: #2f39ae;
 

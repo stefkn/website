@@ -12,8 +12,26 @@ class HeaderAnimation extends React.Component {
     const camera = new $.PerspectiveCamera(75, 2, .1, 100);
     const composer = new EffectComposer(renderer);
 
-    // fit canvas to header block
-    window.addEventListener('resize', () => {
+    // Returns a function, that, as long as it continues to be invoked, will not
+    // be triggered. The function will be called after it stops being called for
+    // N milliseconds. If `immediate` is passed, trigger the function on the
+    // leading edge, instead of the trailing.
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    function respondToViewportResize() {
         if (window.location.pathname === '/') {
             const { clientWidth, clientHeight } = renderer.domElement;
             renderer.setPixelRatio(window.devicePixelRatio/4); // TODO: ---> Make this conditional on xtra wide high def screens
@@ -42,6 +60,13 @@ class HeaderAnimation extends React.Component {
             document.getElementById('header-wrapper').style.backgroundColor = '#ffffff00';
             document.getElementsByTagName('nav')[0].style.backgroundColor = '#ffffff00';
         }
+    }
+
+    const debouncedResize = debounce(respondToViewportResize, 400);
+
+    // fit canvas to header block
+    window.addEventListener('resize', () => {
+        debouncedResize();
     });
 
     // let's set this thing up

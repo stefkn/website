@@ -126,10 +126,10 @@ class HeaderAnimation extends React.Component {
     const HeaderAnimContainer = styled.div`
         canvas {
             width: 98vw;
-            height: 70.5vh;
+            height: 60em;
             display: block;
             position: absolute;
-            background: #0014ff;
+            background-color: #2f39ae;
             z-index: 1;
         }
     `

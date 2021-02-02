@@ -15,7 +15,7 @@ const NotFoundPage = () => (
       <p>Sad face.</p>
       <Link to="/">Go back to the homepage</Link>
     </MainMatter>
-    <Footer />
+    <Footer bottomImage={true} />
   </Layout>
 );
 

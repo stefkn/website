@@ -26,7 +26,7 @@ export default function Template({
             dangerouslySetInnerHTML={{ __html: html }}
             />
         </Article>
-        <Footer />
+        <Footer bottomImage={false} />
     </Layout>
   )
 }

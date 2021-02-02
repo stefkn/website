@@ -15,8 +15,9 @@ const SOCIAL = [
   }
 ];
 
-const Footer = () => (
+const Footer = (props) => (
   <StaticQuery
+    image={props.bottomImage}
     query={graphql`
       query {
         art_deer: file(
@@ -33,16 +34,19 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_deer.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
+        {props.bottomImage ?
+          <Art>
+            <Img
+              fluid={data.art_deer.childImageSharp.fluid}
+              style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
+            />
+          </Art>
+          :
+          <div style={{'marginTop': '20em'}}></div>}
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>ste.ken.now</h2>
+              <h2>steken.dev</h2>
               <span>
                 code & illustrations by stefan
               </span>

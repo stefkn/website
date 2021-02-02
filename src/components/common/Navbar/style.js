@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   background-color: ${props => props.theme.color.primary};
   position: fixed;
   width: 100%;
-  height: 1vh;
+  height: 5em;
   top: 0;
   z-index: 1000;
   -webkit-transition: background-color 500ms linear;

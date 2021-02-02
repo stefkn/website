@@ -39,23 +39,6 @@ class HeaderAnimation extends React.Component {
             camera.aspect = clientWidth / clientHeight;
             camera.updateProjectionMatrix();
             composer.setSize(document.getElementById('header-wrapper').clientWidth, document.getElementById('header-wrapper').clientHeight);
-            // Sticky navbar responsiveness
-            switch (true) {
-                case clientWidth > 1199:
-                    document.getElementById('header-animation-container').style.top = '-811px';
-                break;
-                case clientWidth > 991:
-                    document.getElementById('header-animation-container').style.top = '-641px';
-                break;
-                case clientWidth > 767:
-                    document.getElementById('header-animation-container').style.top = '-1111px';
-                break;
-                case clientWidth > 575:
-                    document.getElementById('header-animation-container').style.top = '-894px';
-                break;
-                default:
-                    document.getElementById('header-animation-container').style.top = '-781px';
-            }
             // Make the wrapper and nav transparent -- they are occluding the HeaderAnim while it loads
             document.getElementById('header-wrapper').style.backgroundColor = '#ffffff00';
             document.getElementsByTagName('nav')[0].style.backgroundColor = '#ffffff00';
@@ -131,6 +114,16 @@ class HeaderAnimation extends React.Component {
             position: absolute;
             background-color: #2f39ae;
             z-index: 1;
+        }
+
+        @media (max-width: 1420px) {
+            top: -880px;
+        }
+        @media (max-width: 320px) {
+            top: -890px;
+        }
+        @media (min-width: 1420px) {
+            top: -880px;
         }
     `
     return (

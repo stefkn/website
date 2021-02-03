@@ -65,7 +65,6 @@ const Frontmatter = styled.div`
   max-width: 816px;
   display: block;
   margin: 16px auto;
-  max-width: 50vw;
 `;
 
 export default About;

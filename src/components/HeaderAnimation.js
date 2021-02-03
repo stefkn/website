@@ -43,7 +43,7 @@ class HeaderAnimation extends React.Component {
             renderer.setSize(clientWidth, clientHeight, false);
             camera.aspect = clientWidth / clientHeight;
             camera.updateProjectionMatrix();
-            composer.setSize(document.getElementById('header-wrapper').clientWidth, document.getElementById('header-wrapper').clientHeight);
+            composer.setSize(clientWidth, clientHeight);
             // Make the wrapper and nav transparent -- they are occluding the HeaderAnim while it loads
             document.getElementById('header-wrapper').style.backgroundColor = '#ffffff00';
             document.getElementsByTagName('nav')[0].style.backgroundColor = '#ffffff00';

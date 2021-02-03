@@ -92,16 +92,8 @@ const ArtBackground = styled.div`
 
   height: 600px;
   bottom: 285px;
-  left: 20vw;
+  left: 10vw;
   width: 66vw;
-
-  @media (max-width: 380px) {
-    display: none;
-  }
-
-  @media (min-width: 420px) {
-
-  }
 
   @media (min-width: ${props => props.theme.screen.xs}) {
     max-width: 540px;
@@ -113,10 +105,6 @@ const ArtBackground = styled.div`
 
   @media (min-width: ${props => props.theme.screen.md}) {
     max-width: 960px;
-  }
-
-  @media (max-width: 1200px) {
-    bottom: 714px;
   }
 
   @media (min-width: ${props => props.theme.screen.lg}) {

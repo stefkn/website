@@ -50,11 +50,12 @@ class HeaderAnimation extends React.Component {
         }
     }
 
-    const debouncedResize = debounce(respondToViewportResize, 400);
+    function timedResize() { setTimeout(respondToViewportResize, 100); };
+    const debouncedTimeout = debounce(timedResize, 100, false);
 
     // fit canvas to header block
     window.addEventListener('resize', () => {
-        debouncedResize();
+        debouncedTimeout();
     });
 
     // let's set this thing up
@@ -69,7 +70,8 @@ class HeaderAnimation extends React.Component {
     // Main
     // ----
 
-    window.dispatchEvent(new Event('resize'));
+    respondToViewportResize();
+
     renderer.setAnimationLoop(t => {
         composer.render();
     });

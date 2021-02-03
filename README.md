@@ -40,4 +40,7 @@ Deployment via Netlify. Pushes to master will trigger CD pipeline.
 
 ## TODOS
 
--
+- [ ] Fix ArtBackground's positioning on various screen sizes
+- [ ] Fix landing page copy resizing, add some dynamic columns
+- [ ] Implement some standardised classes for text
+- [ ] Finish articles page
